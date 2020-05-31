@@ -42,6 +42,7 @@ class Postgres extends ICrud {
         return this._schema.findAll({ where: item, raw: true });
     }
     static async connect() {
+        console.log('SSL_DB', process.env.SSL_DB);
         const connection = new Sequelize(
             process.env.POSTGRES_URL,
             {
