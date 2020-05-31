@@ -1,5 +1,5 @@
 node_modules
-/config
+
 /scripts
 /tests
 /docker-cmd.txt
