@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.js",
-    "test:prod": "cross-env NODE_ENV=prod npm t",
+    "test": "mocha --timeout 10000 tests/*.js",
+    "test:prod": "cross-env NODE_ENV=prod npm test",
     "prod": "cross-env NODE_ENV=prod node api.js"
   },
   "keywords": [],
