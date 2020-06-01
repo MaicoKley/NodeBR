@@ -10,7 +10,7 @@ const { ok } = require('assert');
 const env = process.env.NODE_ENV || "dev";
 ok(env === "prod" || env === "dev", "a env é invalida, apenas dev ou prod");
 
-const configPath = join(__dirname, '../config', `.env.${env}`);
+const configPath = join(__dirname, '../configs', `.env.${env}`);
 config({
     path: configPath
 });

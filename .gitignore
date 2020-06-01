@@ -1,6 +1,6 @@
 node_modules
+/configs
 /scripts
 /tests
 /docker-cmd.txt
 /src/*xample.js
-/config
