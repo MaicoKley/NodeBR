@@ -5,9 +5,9 @@ const failAction = (request, headers, erro) => {
     throw erro
 };
 
-const headers = Joi.object({
+/*const headers = Joi.object({
     authorization: Joi.string().required()
-}).unknown();
+}).unknown();*/
 
 class HeroRoutes extends BaseRoute {
     constructor(db) {
@@ -34,7 +34,7 @@ class HeroRoutes extends BaseRoute {
                         limit: Joi.number().integer().default(10),
                         nome: Joi.string().min(3).max(100)
                     },
-                    headers,
+                    //headers,
                 }
             },
             handler: (request, headers) => {
