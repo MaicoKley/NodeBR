@@ -37,7 +37,7 @@ class HeroRoutes extends BaseRoute {
                     headers,
                 }
             },
-            handler: (request) => {
+            handler: (request, headers) => {
                 try {
                     const { nome, skip, limit } = request.query;
 
